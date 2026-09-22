@@ -9,13 +9,15 @@ Users can log activities such as transportation, electricity consumption, and me
 🆔 Hackathon Information
 
 Hackathon ID: AZIS-M6AXSQ
+
 Team: Haridwar Team 38
+
 College: Haridwar University
+
 Project: EcoTrack AI
 
 🚀 Live Demo
 
-Public App:
 🌱 EcoTrack AI – Live Demo
 
 🎯 Problem Statement
@@ -141,7 +143,7 @@ Monday 00:00 → Sunday 23:59
 
 The application calculates the user's current weekly emissions and compares them against the configured target.
 
-The dashboard shows:
+The dashboard shows
 
 Current weekly CO₂
 
@@ -189,7 +191,7 @@ EcoTrack AI includes an AI-powered sustainability coach using the Groq API.
 
 The AI analyzes the user's calculated footprint and generates personalized recommendations.
 
-The AI provides:
+The AI provides
 
 A personalized insight
 
@@ -238,8 +240,6 @@ The AI does not
 ❌ Replace the deterministic calculation engine
 
 🔄 Product Flow
-
-EcoTrack AI follows a simple behavior-change loop:
 
 ┌───────────────┐
 │    MEASURE    │
@@ -518,19 +518,25 @@ The goal is to make everyday environmental choices more measurable and easier to
 Haridwar Team 38
 
 College: Haridwar University
+
 Hackathon ID: AZIS-M6AXSQ
 
 📌 Hackathon Submission Information
 
 Project: EcoTrack AI
+
 Hackathon ID: AZIS-M6AXSQ
+
 Team: Haridwar Team 38
+
 Institution: Haridwar University
 
-GitHub Repository:
+GitHub Repository
+
 https://github.com/tomardeepak156/EcoTrack-AI
 
-Public Application:
+Public Application
+
 https://ecotrack-ai-gkura3yjr3ysafc9bgk7q5.streamlit.app/
 
 🌱 EcoTrack AI
