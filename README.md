@@ -2,9 +2,19 @@
 
 Measure → Understand → Simulate → Act → Track
 
+🚀 Live Demo
+
+🟢 Primary — Render
+
+🌱 Launch EcoTrack AI on Render
+
+🔵 Backup — Streamlit Cloud
+
+🌱 Launch EcoTrack AI on Streamlit Cloud
+
 EcoTrack AI is an AI-powered personal carbon footprint tracking application that helps users understand the environmental impact of their everyday activities.
 
-Users can log activities such as transportation, electricity consumption, and meals, calculate their CO₂ footprint using predefined emission factors, monitor a weekly carbon target, analyze their activity history, and receive personalized recommendations from an AI sustainability coach.
+Users can log transportation, electricity, and meal activities, calculate CO₂e using predefined emission factors, monitor a weekly carbon target, analyze history, run what-if comparisons, and receive personalized recommendations from an AI sustainability coach.
 
 🆔 Hackathon Information
 
@@ -16,15 +26,11 @@ College: Haridwar University
 
 Project: EcoTrack AI
 
-🚀 Live Demo
-
-🌱 EcoTrack AI – Live Demo
-
 🎯 Problem Statement
 
-People often want to reduce their environmental impact but do not have a simple way to measure how their everyday activities contribute to their carbon footprint.
+People often want to reduce their environmental impact but do not have a simple way to measure how everyday activities contribute to their carbon footprint.
 
-EcoTrack AI provides a simple and interactive way to record everyday activities and understand their estimated CO₂ emissions.
+EcoTrack AI provides an interactive way to record activities and understand their estimated CO₂e emissions.
 
 The application transforms activity data into:
 
@@ -40,13 +46,9 @@ The application transforms activity data into:
 
 ✨ Features
 
-EcoTrack AI implements all five required features of the hackathon brief.
-
 1. 📝 Log an Activity
 
-Users can log everyday activities by selecting an activity type and entering a quantity.
-
-Supported Activities
+Users can log:
 
 🚗 Car travel
 
@@ -60,17 +62,17 @@ Supported Activities
 
 🍗 Non-vegetarian meal
 
-Example
+Example:
 
 Activity: Car
 Quantity: 10 km
 CO₂e: 2.00 kg
 
-The activity is stored in the application's SQLite database and becomes available in the activity history.
+Activities are stored in SQLite and become available in history.
 
 2. 🧮 CO₂ Calculation
 
-EcoTrack AI uses fixed emission factors to calculate CO₂ emissions.
+EcoTrack AI uses fixed emission factors.
 
 Activity
 
@@ -100,24 +102,18 @@ Emission Factor
 
 2.00 kg CO₂e / meal
 
-Calculation Formula
-
 CO₂e = Quantity × Emission Factor
 
-Example
+Example:
 
 10 km × 0.20 kg CO₂e/km
 = 2.00 kg CO₂e
 
-The calculation engine is deterministic.
-
-The AI model does not calculate, modify, or invent emission factors.
+The calculation engine is deterministic. The AI does not calculate, modify, or invent emission factors.
 
 3. 📊 Dashboard
 
-The dashboard provides a visual overview of the user's carbon footprint.
-
-It includes:
+The dashboard provides:
 
 Total CO₂ footprint
 
@@ -127,23 +123,17 @@ Carbon Score
 
 Largest contributing category
 
-Visual charts
+Interactive charts
 
 Footprint insights
 
-Users can quickly identify which areas contribute most to their footprint.
-
 4. 🎯 Weekly CO₂ Target
 
-Users can set their own weekly carbon target.
-
-EcoTrack AI defines the weekly period as:
+Users can set a weekly carbon target.
 
 Monday 00:00 → Sunday 23:59
 
-The application calculates the user's current weekly emissions and compares them against the configured target.
-
-The dashboard shows
+The dashboard shows:
 
 Current weekly CO₂
 
@@ -155,11 +145,9 @@ Remaining allowance
 
 Target exceeded warning
 
-When the target is approached or exceeded, EcoTrack AI warns and encourages the user rather than blocking activity logging.
+The application warns and encourages users rather than blocking activity logging.
 
 5. 📜 History & Filters
-
-Every logged activity is stored locally using SQLite.
 
 The history section displays:
 
@@ -175,7 +163,7 @@ CO₂ emissions
 
 Date and time
 
-Users can filter their history by:
+Filters:
 
 Activity type
 
@@ -183,15 +171,11 @@ Start date
 
 End date
 
-This allows users to track their carbon footprint over time.
-
 🤖 AI Carbon Coach
 
-EcoTrack AI includes an AI-powered sustainability coach using the Groq API.
+EcoTrack AI uses the Groq API with openai/gpt-oss-20b.
 
-The AI analyzes the user's calculated footprint and generates personalized recommendations.
-
-The AI provides
+The AI provides:
 
 A personalized insight
 
@@ -199,7 +183,7 @@ Identification of major contributing areas
 
 Exactly three practical actions
 
-Example
+Example:
 
 INSIGHT:
 Your largest carbon impact comes from transportation.
@@ -211,9 +195,9 @@ ACTIONS:
 
 🧠 AI Design
 
-EcoTrack AI separates deterministic carbon calculations from AI recommendations.
+The project separates deterministic computation from generative AI.
 
-The calculation engine
+Calculation engine
 
 Calculates CO₂ emissions
 
@@ -221,11 +205,11 @@ Uses predefined emission factors
 
 Produces deterministic results
 
-The AI coach
+AI coach
 
-Analyzes the provided footprint
+Analyzes calculated footprint data
 
-Identifies important patterns
+Identifies patterns
 
 Generates personalized recommendations
 
@@ -237,31 +221,21 @@ The AI does not
 
 ❌ Modify calculated CO₂ values
 
-❌ Replace the deterministic calculation engine
+❌ Replace the calculation engine
 
 🔄 Product Flow
 
-┌───────────────┐
-│    MEASURE    │
-└───────┬───────┘
-        ↓
-┌───────────────┐
-│   UNDERSTAND  │
-└───────┬───────┘
-        ↓
-┌───────────────┐
-│    SIMULATE   │
-└───────┬───────┘
-        ↓
-┌───────────────┐
-│      ACT      │
-└───────┬───────┘
-        ↓
-┌───────────────┐
-│     TRACK     │
-└───────┬───────┘
-        │
-        └──────────────→ Measure Again
+MEASURE
+   ↓
+UNDERSTAND
+   ↓
+SIMULATE
+   ↓
+ACT
+   ↓
+TRACK
+   ↓
+MEASURE AGAIN
 
 🏗️ Technology Stack
 
@@ -320,12 +294,12 @@ data/ecotrack.db is local application data and is excluded from GitHub using .gi
 
 ⚙️ Local Installation
 
-1. Clone the repository
+1. Clone
 
 git clone https://github.com/tomardeepak156/EcoTrack-AI.git
 cd EcoTrack-AI
 
-2. Create a virtual environment
+2. Create virtual environment
 
 python -m venv .venv
 
@@ -339,23 +313,19 @@ pip install -r requirements.txt
 
 4. Configure Groq API
 
-Create a .env file in the project root:
+Create .env:
 
 GROQ_API_KEY=your_groq_api_key
 
-Never commit your .env file or API key to GitHub.
+Never commit .env or your API key to GitHub.
 
-5. Run the application
+5. Run
 
 streamlit run app.py
-
-The application will open in your browser.
 
 🔐 Authentication
 
 EcoTrack AI does not implement authentication.
-
-There is:
 
 ❌ No login
 
@@ -379,35 +349,51 @@ unit
 co2
 logged_at
 
-Weekly target settings are also stored locally.
-
-The application also maintains historical footprint data for analytics functionality.
+Weekly target settings and historical footprint data are also stored locally.
 
 🧪 Example Calculations
 
+Activity
+
+Example
+
+Result
+
 🚗 Car
 
-10 km × 0.20 = 2.00 kg CO₂e
+10 km × 0.20
+
+2.00 kg CO₂e
 
 🚌 Bus
 
-10 km × 0.08 = 0.80 kg CO₂e
+10 km × 0.08
+
+0.80 kg CO₂e
 
 ✈️ Flight
 
-10 km × 0.25 = 2.50 kg CO₂e
+10 km × 0.25
+
+2.50 kg CO₂e
 
 ⚡ Electricity
 
-10 kWh × 0.80 = 8.00 kg CO₂e
+10 kWh × 0.80
+
+8.00 kg CO₂e
 
 🥗 Veg Meal
 
-1 meal × 0.50 = 0.50 kg CO₂e
+1 × 0.50
+
+0.50 kg CO₂e
 
 🍗 Non-Veg Meal
 
-1 meal × 2.00 = 2.00 kg CO₂e
+1 × 2.00
+
+2.00 kg CO₂e
 
 🧩 Decision Points
 
@@ -417,25 +403,25 @@ Decision Point 1 — User Nudge Behavior
 
 Choice: Warn + Encourage
 
-EcoTrack warns users when their footprint is high or when they approach/exceed their weekly target. The application does not shame users or block them from logging activities, keeping the experience supportive and encouraging continued tracking.
+EcoTrack warns users when their footprint is high or when they approach/exceed their weekly target. The application does not shame users or block them from logging activities.
 
 Decision Point 2 — Absurd Input Handling
 
 Choice: Reject / Warn
 
-EcoTrack does not silently calculate clearly unrealistic activity values. Inputs outside reasonable limits are rejected or flagged so that incorrect data does not distort the user's carbon footprint.
+EcoTrack does not silently calculate clearly unrealistic activity values. Inputs outside reasonable limits are rejected or flagged so incorrect data does not distort the carbon footprint.
 
 Decision Point 3 — Week Definition
 
 Choice: Monday 00:00 → Sunday 23:59
 
-EcoTrack defines a week from Monday through Sunday. Weekly CO₂ progress is calculated using activities logged during the current Monday–Sunday period and compared against the user's configured weekly target.
+EcoTrack defines a week from Monday through Sunday. Weekly CO₂ progress is calculated using activities logged during the current Monday–Sunday period.
 
 🔌 Standard API
 
 Standard API: Not implemented.
 
-EcoTrack AI is implemented as an interactive Streamlit web application. The required functionality is exposed directly through the browser interface rather than through a separate standard API.
+EcoTrack AI is implemented as an interactive Streamlit web application. Required functionality is exposed through the browser interface rather than through a separate standard API.
 
 🧪 Hackathon Requirements Checklist
 
@@ -499,8 +485,6 @@ Public deployment
 
 EcoTrack AI is designed to make carbon footprint tracking simple and actionable.
 
-Instead of only showing a number, the application helps users move from:
-
 Awareness
     ↓
 Measurement
@@ -535,7 +519,11 @@ GitHub Repository
 
 https://github.com/tomardeepak156/EcoTrack-AI
 
-Public Application
+Primary Public Application
+
+https://ecotrack-ai-4f3r.onrender.com/
+
+Backup Public Application
 
 https://ecotrack-ai-gkura3yjr3ysafc9bgk7q5.streamlit.app/
 
