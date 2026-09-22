@@ -16,7 +16,7 @@ Project: EcoTrack AI
 🚀 Live Demo
 
 Public App:
-EcoTrack AI – Live Demo
+🌱 EcoTrack AI – Live Demo
 
 🎯 Problem Statement
 
@@ -211,7 +211,7 @@ ACTIONS:
 
 EcoTrack AI separates deterministic carbon calculations from AI recommendations.
 
-The calculation engine:
+The calculation engine
 
 Calculates CO₂ emissions
 
@@ -219,7 +219,7 @@ Uses predefined emission factors
 
 Produces deterministic results
 
-The AI coach:
+The AI coach
 
 Analyzes the provided footprint
 
@@ -227,7 +227,7 @@ Identifies important patterns
 
 Generates personalized recommendations
 
-The AI does not:
+The AI does not
 
 ❌ Calculate emission factors
 
@@ -323,7 +323,6 @@ data/ecotrack.db is local application data and is excluded from GitHub using .gi
 1. Clone the repository
 
 git clone https://github.com/tomardeepak156/EcoTrack-AI.git
-
 cd EcoTrack-AI
 
 2. Create a virtual environment
@@ -388,39 +387,31 @@ The application also maintains historical footprint data for analytics functiona
 
 🚗 Car
 
-10 km × 0.20
-= 2.00 kg CO₂e
+10 km × 0.20 = 2.00 kg CO₂e
 
 🚌 Bus
 
-10 km × 0.08
-= 0.80 kg CO₂e
+10 km × 0.08 = 0.80 kg CO₂e
 
 ✈️ Flight
 
-10 km × 0.25
-= 2.50 kg CO₂e
+10 km × 0.25 = 2.50 kg CO₂e
 
 ⚡ Electricity
 
-10 kWh × 0.80
-= 8.00 kg CO₂e
+10 kWh × 0.80 = 8.00 kg CO₂e
 
 🥗 Veg Meal
 
-1 meal × 0.50
-= 0.50 kg CO₂e
+1 meal × 0.50 = 0.50 kg CO₂e
 
 🍗 Non-Veg Meal
 
-1 meal × 2.00
-= 2.00 kg CO₂e
+1 meal × 2.00 = 2.00 kg CO₂e
 
 🧩 Decision Points
 
-The complete Decision Point documentation is available in:
-
-DECISIONS.md
+The complete Decision Point documentation is available in DECISIONS.md.
 
 Decision Point 1 — User Nudge Behavior
 
@@ -527,33 +518,19 @@ The goal is to make everyday environmental choices more measurable and easier to
 Haridwar Team 38
 
 College: Haridwar University
-
 Hackathon ID: AZIS-M6AXSQ
 
 📌 Hackathon Submission Information
 
-Project
+Project: EcoTrack AI
+Hackathon ID: AZIS-M6AXSQ
+Team: Haridwar Team 38
+Institution: Haridwar University
 
-EcoTrack AI
-
-Hackathon ID
-
-AZIS-M6AXSQ
-
-Team
-
-Haridwar Team 38
-
-Institution
-
-Haridwar University
-
-GitHub Repository
-
+GitHub Repository:
 https://github.com/tomardeepak156/EcoTrack-AI
 
-Public Application
-
+Public Application:
 https://ecotrack-ai-gkura3yjr3ysafc9bgk7q5.streamlit.app/
 
 🌱 EcoTrack AI
