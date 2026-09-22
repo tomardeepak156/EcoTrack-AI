@@ -571,7 +571,7 @@ https://github.com/tomardeepak156/EcoTrack-AI
 
 Public Application
 
-PASTE_YOUR_STREAMLIT_URL_HERE
+(https://ecotrack-ai-gkura3yjr3ysafc9bgk7q5.streamlit.app/)
 
 🌱 EcoTrack AI
 
