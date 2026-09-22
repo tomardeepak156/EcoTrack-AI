@@ -8,32 +8,15 @@ Users can log activities such as transportation, electricity consumption, and me
 
 🆔 Hackathon Information
 
-Field
-
-Details
-
-Hackathon ID
-
-AZIS-M6AXSQ
-
-Team
-
-Haridwar Team 38
-
-College
-
-Haridwar University
-
-Project
-
-EcoTrack AI
+Hackathon ID: AZIS-M6AXSQ
+Team: Haridwar Team 38
+College: Haridwar University
+Project: EcoTrack AI
 
 🚀 Live Demo
 
 Public App:
-PASTE_YOUR_STREAMLIT_URL_HERE
-
-Replace the placeholder above with the deployed Streamlit URL after deployment.
+EcoTrack AI – Live Demo
 
 🎯 Problem Statement
 
@@ -515,7 +498,7 @@ Standard API declaration
 
 Public deployment
 
-⏳
+✅
 
 3–4 minute demo recording
 
@@ -571,7 +554,7 @@ https://github.com/tomardeepak156/EcoTrack-AI
 
 Public Application
 
-(https://ecotrack-ai-gkura3yjr3ysafc9bgk7q5.streamlit.app/)
+https://ecotrack-ai-gkura3yjr3ysafc9bgk7q5.streamlit.app/
 
 🌱 EcoTrack AI
 
