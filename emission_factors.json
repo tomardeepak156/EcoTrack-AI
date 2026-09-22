@@ -1,0 +1,32 @@
+{
+    "transport": {
+        "car": {
+            "factor": 0.20,
+            "unit": "kg CO2e/km"
+        },
+        "bus": {
+            "factor": 0.08,
+            "unit": "kg CO2e/km"
+        },
+        "flight": {
+            "factor": 0.25,
+            "unit": "kg CO2e/km"
+        }
+    },
+    "electricity": {
+        "grid": {
+            "factor": 0.80,
+            "unit": "kg CO2e/kWh"
+        }
+    },
+    "food": {
+        "veg_meal": {
+            "factor": 0.50,
+            "unit": "kg CO2e/meal"
+        },
+        "non_veg_meal": {
+            "factor": 2.00,
+            "unit": "kg CO2e/meal"
+        }
+    }
+}
