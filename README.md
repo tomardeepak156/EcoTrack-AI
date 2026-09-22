@@ -1,13 +1,3 @@
-🚀 Live Demo
-
-🟢 Primary — Render
-
-👉 Launch EcoTrack AI
-
-🔵 Backup — Streamlit Cloud
-
-👉 Launch EcoTrack AI
-
 🌱 EcoTrack AI
 
 Measure → Understand → Simulate → Act → Track
